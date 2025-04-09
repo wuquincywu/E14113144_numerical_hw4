@@ -1,0 +1,16 @@
+clc;clear;close;
+%a
+a = 0; b = 1; n = 4;
+n = (b - a)/2/n;
+ansa = fa();
+for i = 1 : 2*n-1
+    xi = a + i*h;
+    fi = fa(xi)
+    if mod(i,2) == 0
+        ansa = ansa + 2*fi;
+    else
+        ansa = ansa + 4*fi;
+    end
+end
+%%
+%b
